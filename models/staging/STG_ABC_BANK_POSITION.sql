@@ -11,7 +11,6 @@ src_data as (
          , COST_BASE         as COST_BASE        -- NUMBER
          , POSITION_VALUE    as POSITION_VALUE   -- NUMBER
          , CURRENCY          as CURRENCY_CODE    -- TEXT
-
          , 'SOURCE_DATA.ABC_BANK_POSITION' as RECORD_SOURCE
 
     FROM {{ source('abc_bank', 'ABC_BANK_POSITION') }}
